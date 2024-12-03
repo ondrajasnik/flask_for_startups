@@ -63,3 +63,14 @@ class User(UserMixin, Base):
 
     def __repr__(self):
         return f"<User {self.email}>"
+
+class Parent(Base):
+    __tablename__ = "parents"
+    parent_id = Column(Integer, primary_key=True)
+    name = Column(Text, nullable=False)
+    created_at = Column(DateTime, server_default=func.now())
+
+    def __repr__(self):
+        return f"<Parent {self.name}>"
+    
+    

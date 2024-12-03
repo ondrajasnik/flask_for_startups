@@ -45,6 +45,9 @@ bp.add_url_rule("/", view_func=static_views.index)
 
 bp.add_url_rule("/register", view_func=static_views.register)
 
+bp.add_url_rule("/test", view_func=static_views.test)
+
+
 bp.add_url_rule("/login", view_func=static_views.login)
 
 # Login required views

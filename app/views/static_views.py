@@ -9,6 +9,9 @@ from flask_login import login_required
 # App imports
 from ..permissions import roles_required
 
+def test():
+    
+    return render_template("parent.html")
 
 def index():
     return render_template("index.html")
